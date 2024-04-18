@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>
+        Imagem dinâmica
+    </h1>
+    <p>
+        Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+        <source media="(max-width: 700px)" srcset="imagens/p.jpg" type="image/jpg">
+        <source media="(max-width: 1000px)" srcset="imagens/m.jpg" type="image/jpg">
+        <img src="imagens/g.jpg" alt="image flexivel">
+    </picture>
+
+    <h1>
+        Reproduzindo Áudio
+    </h1>
+    <p>
+        Vamos aprender a reproduzir áudio em HTML5.
+    </p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/musica de teste.mp3" type="audio/mp3">
+        <source src="midia/musica de teste.ogg" type="audio/ogg">
+        <source src="midia/musica de teste.wav" type="audio/wav">
+        <p>
+            infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/musica de teste.mp3">Clique aqui para baixa o áudio em MP3</a>
+        </p>
+    </audio>
+
+    <h1>
+        Vamos reproduzir videos
+    </h1>
+
+    <video width="700" poster="imagens/imagen para video.jpg" controls loop>
+        <source src="midia/kick slowmotion.mp4" type="video/mp4">
+    </video>
+
+    <video src=""></video>
+
+    <h1>
+        Inserindo videos do YouTube
+    </h1>
+    <iframe width="700" height="315" src="https://www.youtube.com/embed/UHsJnbpbf48?si=yV3O_n1YyG0a-oma" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
