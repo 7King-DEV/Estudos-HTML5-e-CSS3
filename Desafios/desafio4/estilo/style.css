@@ -58,12 +58,16 @@ section.imagem {
     font-weight: bold;
     background-color: #26002e;
     color: white;
+    background-size: cover;
+    box-shadow: inset 5px 5px 10px 0px black;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 10px;
-    background-color: #00000048;
+    background-color: #00000077;
+    text-shadow: 1px 1px 0px black;
 }
 
 a {
@@ -74,6 +78,20 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+section#img01 {
+    background-image: url('../imagens/one\ piece\ luffy.jpg');
+    background-position: center right;
+    padding-top: 25vh;
+    padding-bottom: 20vh;
+}
+
+section#img02 {
+    background-image: url('../imagens/one\ piece\ inicio.jpg');
+    background-position: center right;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
 }
 
 footer {
