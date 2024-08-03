@@ -24,8 +24,9 @@ header {
 }
 
 header > h1 {
-    font-family: "Nanum Pen Script";
+    font-family: ;
     padding-top: 50px;
+    font-size: 10vp;
 }
 
 header > p {
@@ -42,17 +43,21 @@ section {
 }
 
 section.normal {
+    font-family: 'nexa';
     background-color: white;
     color: black;
 }
 
 section.imagem {
+    font-family: 'nexa';
+    font-weight: bold;
     background-color: #26002e;
     color: white;
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 10px;
     background-color: #00000048;
 }
 
