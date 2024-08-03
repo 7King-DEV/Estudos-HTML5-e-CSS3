@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'nexa';
+    src: url('Fonts/Nexa Bold.otf') format('opentype'), url('fonts/Nexa Light.otf') format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -17,11 +24,13 @@ header {
 }
 
 header > h1 {
+    font-family: "Nanum Pen Script";
     padding-top: 50px;
-    font-variant: small-caps;
 }
 
 header > p {
+    font-family: 'nexa';
+    font-weight: light;
     padding-bottom: 50px;
 }
 
