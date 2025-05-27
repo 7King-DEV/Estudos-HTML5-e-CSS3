@@ -12,6 +12,14 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         td, th {
@@ -22,6 +30,23 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            /* Fixando o cabeçalho no topo */
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd) {
+            /* odd = impar */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) {
+            /* even = par */
+            background-color: lightgray;
         }
 
         td.num {
@@ -36,6 +61,7 @@
     <!--
     ANATOMIA PARA TABELAS GRANDES
     TABELA
+        CAPTION = Legenda da tabela
         THEAD
             TR, TD, TH
         TBODY
@@ -44,10 +70,13 @@
             TR, TD, TH
     -->
             <table>
+                <caption>
+                    População das Unidades Federativas
+                </caption>
                 <thead>
                     <tr>
-                        <th>Estado</th>
-                        <th>População</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col" style="width: 50px;">População</th>
                     </tr>
                 </thead>
 
@@ -64,14 +93,36 @@
                         <td>Ceará</td>
                         <td class="num">9.233.656</td>
                     </tr>
+                    <tr>
+                        <td>Goiás</td>
+                        <td class="num">7.350.483</td>
+                    </tr>
+                    <tr>
+                        <td>Amazonas</td>
+                        <td class="num">4.281.209</td>
+                    </tr>
                 </tbody>
 
                 <tfoot>
                     <tr>
-                        <th>Total de Habitantes</th>
-                        <td class="num"><strong>35.314.084</strong></td>
+                        <th scope="row">Total de Habitantes</th>
+                        <td class="num"><strong>46.945.776</strong></td>
                     </tr>
                 </tfoot>
             </table>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, minima voluptas? Optio deleniti, sit inventore magnam reiciendis sequi facilis officiis omnis! Pariatur ipsa reiciendis non. Voluptatem a porro quo fuga!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque at magni mollitia ratione ex officia consequatur, maxime velit eum esse fugit fuga nostrum quos, nobis itaque doloremque, sunt necessitatibus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur quasi repudiandae laborum, facilis eum omnis dolorum laboriosam enim aliquid, esse rerum corrupti quas eligendi debitis eius error molestiae! Similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptate enim nemo adipisci molestiae non. Blanditiis, similique tempore. Sit neque natus asperiores minus, veritatis maxime corporis beatae ipsa rerum voluptatum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, doloremque architecto dignissimos rerum quidem iste at, facere in, odit cumque exercitationem ex minus voluptas sequi sed ab! Dolorem, modi distinctio.
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, minima voluptas? Optio deleniti, sit inventore magnam reiciendis sequi facilis officiis omnis! Pariatur ipsa reiciendis non. Voluptatem a porro quo fuga!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque at magni mollitia ratione ex officia consequatur, maxime velit eum esse fugit fuga nostrum quos, nobis itaque doloremque, sunt necessitatibus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur quasi repudiandae laborum, facilis eum omnis dolorum laboriosam enim aliquid, esse rerum corrupti quas eligendi debitis eius error molestiae! Similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptate enim nemo adipisci molestiae non. Blanditiis, similique tempore. Sit neque natus asperiores minus, veritatis maxime corporis beatae ipsa rerum voluptatum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, doloremque architecto dignissimos rerum quidem iste at, facere in, odit cumque exercitationem ex minus voluptas sequi sed ab! Dolorem, modi distinctio.
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, minima voluptas? Optio deleniti, sit inventore magnam reiciendis sequi facilis officiis omnis! Pariatur ipsa reiciendis non. Voluptatem a porro quo fuga!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque at magni mollitia ratione ex officia consequatur, maxime velit eum esse fugit fuga nostrum quos, nobis itaque doloremque, sunt necessitatibus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur quasi repudiandae laborum, facilis eum omnis dolorum laboriosam enim aliquid, esse rerum corrupti quas eligendi debitis eius error molestiae! Similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptate enim nemo adipisci molestiae non. Blanditiis, similique tempore. Sit neque natus asperiores minus, veritatis maxime corporis beatae ipsa rerum voluptatum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, doloremque architecto dignissimos rerum quidem iste at, facere in, odit cumque exercitationem ex minus voluptas sequi sed ab! Dolorem, modi distinctio.
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, minima voluptas? Optio deleniti, sit inventore magnam reiciendis sequi facilis officiis omnis! Pariatur ipsa reiciendis non. Voluptatem a porro quo fuga!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque at magni mollitia ratione ex officia consequatur, maxime velit eum esse fugit fuga nostrum quos, nobis itaque doloremque, sunt necessitatibus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur quasi repudiandae laborum, facilis eum omnis dolorum laboriosam enim aliquid, esse rerum corrupti quas eligendi debitis eius error molestiae! Similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptate enim nemo adipisci molestiae non. Blanditiis, similique tempore. Sit neque natus asperiores minus, veritatis maxime corporis beatae ipsa rerum voluptatum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, doloremque architecto dignissimos rerum quidem iste at, facere in, odit cumque exercitationem ex minus voluptas sequi sed ab! Dolorem, modi distinctio.
+            </p>
+         
 </body>
 </html>
